@@ -11,14 +11,10 @@ import { connect } from 'react-redux';
 import GreetingContainer from './greeting/greeting_container';
 import Splash from './splash';
 import Modal from './modal/modal';
-// import DeckIndexContainer from './deck/deck_index_container.jsx';
+import LocationShowContainer from "./location_show/location_show_container";
+import LocationFormContainer from "./locations_form/location_form_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-// import DeckShowContainer from './deck/deck_show_container';
-// import StudyContainer from './study/study_container';
-// import CardIndexContainer from './card/card_index_container';
-// import SearchContainer from './search/search_container';
-// import ArContainer from './ar/ar_container.jsx';
-// import Speech from './speech/speech';
+
 
 export const App = ({ loggedIn }) => (
   <div >
@@ -38,13 +34,11 @@ export const App = ({ loggedIn }) => (
         </span>
       </nav>
     </header>
-    {/* <ProtectedRoute path="/ar/:deckId" component={ArContainer} />
-    <ProtectedRoute path="/speech" component={Speech} />
-    <ProtectedRoute path="/cards/:deckId" component={CardIndexContainer} />
-    <ProtectedRoute path="/study/:deckId" component={StudyContainer} />
-    <ProtectedRoute path="/decks" component={DeckIndexContainer} />
-    <ProtectedRoute path="/decks/:deckId" component={DeckShowContainer} /> */}
     <Route exact path="/" component={Splash} />
+    <Switch>
+      <ProtectedRoute exact path="/locations/new" component={LocationFormContainer} />
+      <Route path="/locations/:locationId" component={LocationShowContainer} />
+    </Switch>
   </div>
 );
 
