@@ -6,9 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-100.times do
-  User.create full_name: Faker::StarWars.character,
-                  email: Faker::Internet.unique.email,
-                  gender: (rand > 0.5 ? 'male' : 'female'),
-                  salary: Faker::Number.between(1, 5000)
-end
+# 100.times do
+#   User.create full_name: Faker::StarWars.character,
+#                   email: Faker::Internet.unique.email,
+#                   gender: (rand > 0.5 ? 'male' : 'female'),
+#                   salary: Faker::Number.between(1, 5000)
+# end
+
+User.create!(
+  username: 'guest',
+  password: 'password'
+)
