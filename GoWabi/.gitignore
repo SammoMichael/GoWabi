@@ -11,6 +11,29 @@ capybara-*.html
 *.orig
 rerun.txt
 pickle-email-*.html
+node_modules/
+bundle.js
+bundle.js.map
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
+
+node_modules/
+bundle.js
+bundle.js.map
+.byebug_history
+.DS_Store
+npm-debug.log
+
+.byebug_history
+
+
+
+
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
