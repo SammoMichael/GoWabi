@@ -14,7 +14,7 @@ import Modal from './modal/modal';
 import LocationShowContainer from "./location_show/location_show_container";
 import LocationFormContainer from "./locations_form/location_form_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import { NewMap } from './newmap/newmap';
+import NewMapContainer from './newmap/newmap_container';
 
 // export const App = ({ loggedIn }) => (
 export const App = () => (
@@ -32,7 +32,7 @@ export const App = () => (
         <span className='greeting-span'>
           {/* {(window.currentUser) ? <SearchContainer /> : null} */}
           <GreetingContainer />
-          <NewMap zoom={12} center={{ lat: 40.6944, lng: -73.9213 }} />
+          <NewMapContainer zoom={12} center={{ lat: 40.6944, lng: -73.9213 }} />
         </span>
       </nav>
     </header>
