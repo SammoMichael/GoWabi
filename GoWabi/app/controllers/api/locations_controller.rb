@@ -3,9 +3,8 @@ class Api::LocationsController < ApplicationController
   # before_action :require_logged_in, only: [:create]
   
   def index
-    locations = bounds ? Location.in_bounds(bounds) : Location.all
-    @locations = locations
-    render :index
+    @locations = Location.all
+    
   end
 
   def show

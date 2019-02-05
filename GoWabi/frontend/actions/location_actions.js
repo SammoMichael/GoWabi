@@ -14,8 +14,8 @@ export const receiveLocation = ({ location, reviews }) => ({
   reviews,
 });
 
-export const fetchLocations = filters => dispatch => (
-  APIUtil.fetchLocations(filters).then(locations => (
+export const fetchLocations = locations => dispatch => (
+  APIUtil.fetchLocations(locations).then(locations => (
     dispatch(receiveLocations(locations))
   ))
 );

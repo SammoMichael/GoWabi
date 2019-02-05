@@ -6,7 +6,7 @@ import LocationMap from '../map/map';
 import { ProtectedRoute } from '../../util/route_util';
 
 const locationShow = ({ location, locationId, fetchlocation }) => {
-  const locationes = {
+  const locations = {
     [locationId]: location
   };
 
@@ -15,14 +15,14 @@ const locationShow = ({ location, locationId, fetchlocation }) => {
       <div className="single-location-map">
         <Link to="/">Back to locationes Index</Link>
         <LocationMap
-          locationes={locationes}
+          locations={locations}
           locationId={locationId}
           singleLocation={true}
           fetchlocation={fetchlocation}
         />
       </div>
       <div className="right-half location-details">
-        <locationDetail location={location} />
+        <LocationDetail location={location} />
       </div>
     </div>
   );
