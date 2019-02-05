@@ -20,3 +20,4 @@ export const createLocation = location => (
     data: { location }
   })
 );
+

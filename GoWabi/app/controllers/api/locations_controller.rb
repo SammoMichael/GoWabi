@@ -1,6 +1,7 @@
 class Api::LocationsController < ApplicationController
-  before_action :require_logged_in, only: [:create]
-
+  # protect_from_forgery with: :null_session
+  # before_action :require_logged_in, only: [:create]
+  
   def index
     locations = bounds ? Location.in_bounds(bounds) : Location.all
     @locations = locations
@@ -12,8 +13,8 @@ class Api::LocationsController < ApplicationController
   end
 
   def create
-    @location = Location.create!(location_params)
-    render :show
+    @location = Location.create(location_params)
+     render json: {notice: notice, status: 200}
   end
 
   private
@@ -23,11 +24,11 @@ class Api::LocationsController < ApplicationController
       :lat,
       :lng,
       :description,
-      :img_url
-      :website_url
-      :name
-      :address 
-      :type
+      :img_url,
+      :website_url,
+      :name,
+      :address, 
+      :category,
     )
   end
 

@@ -16,7 +16,8 @@ import LocationFormContainer from "./locations_form/location_form_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 
-export const App = ({ loggedIn }) => (
+// export const App = ({ loggedIn }) => (
+export const App = () => (
   <div >
     <div>
       <Modal />

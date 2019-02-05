@@ -3,7 +3,7 @@
   <head>
     <title>GoWabi</title>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBdKGFAJbGj2l9yy3V68oPp7cMR1pxS1s0"%>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBdKGFAJbGj2l9yy3V68oPp7cMR1pxS1s0&libraries=places"%>
     <%= stylesheet_link_tag 'application', media: 'all'%>
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application' %>
@@ -19,7 +19,25 @@
   </head>
   <body>
 
-    <%= yield %>
+  
+  
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    
+
+  <%= yield %>
+
 
   </body>
 </html>

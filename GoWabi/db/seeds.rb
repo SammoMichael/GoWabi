@@ -13,7 +13,19 @@
 #                   salary: Faker::Number.between(1, 5000)
 # end
 
-User.create!(
-  username: 'guest',
-  password: 'password'
+# User.create!(
+#   username: 'guest',
+#   password: 'password'
+# )
+
+Location.create!(
+  name: 'red door',
+  category: 'spa',
+  description: 'good',
+  website_url: "https://google.com",
+  img_url: "https://google.com",
+            address: "388 Birch St",
+                  lat: 13123.123123,
+                  lng: 234234.234234
+
 )
