@@ -14,7 +14,7 @@ import Modal from './modal/modal';
 import LocationShowContainer from "./location_show/location_show_container";
 import LocationFormContainer from "./locations_form/location_form_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import NewMap from './newmap/newmap';
+import { NewMap } from './newmap/newmap';
 
 // export const App = ({ loggedIn }) => (
 export const App = () => (
