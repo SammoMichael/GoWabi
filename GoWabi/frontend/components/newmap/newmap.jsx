@@ -15,12 +15,7 @@ export default class NewMap extends React.Component {
 
     componentDidMount() {
         this.props.fetchLocations();
-        const iconUrls = {
-            spa: "",
-            barber: "",
-            removal: "",
-            beauty: "",
-        }; 
+        
     }
     
     render() {
@@ -31,8 +26,10 @@ export default class NewMap extends React.Component {
             <Marker 
                 // position={{ lat: loc.lat, lng: loc.lng }}
                 lat={loc.lat}
+                name={loc.name}
+                description={loc.description}
                 lng={loc.lng}
-                text={loc.category}
+                category={loc.category}
                 key={loc.id} />
             
         ));

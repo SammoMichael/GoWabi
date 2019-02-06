@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
 export class Marker extends Component {
+    
   render() {
-    return (
-      <div>
-        "hello world"
-      </div>
+     const icon = "fas fa-cut"
+          
+          return (
+            <>
+              <i className={icon} /> 
+            </>
     );
   }
 }
