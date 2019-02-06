@@ -6,5 +6,8 @@
 ## Just the Barbershop Being Displayed using Font Awesome Icons 
 ![alt text](https://github.com/SammoMichael/GoWabi/blob/master/GoWabi/app/assets/images/Screen%20Shot%202562-02-05%20at%2010.44.42%20PM.png)
 ## What it would look like if I used name of establishment instead of icons
+![alt text](https://github.com/SammoMichael/GoWabi/blob/master/GoWabi/app/assets/images/Screen%20Shot%202562-02-05%20at%2010.44.42%20PM.png)
+
+
 ![alt text](https://github.com/SammoMichael/GoWabi/blob/master/GoWabi/app/assets/images/Screen%20Shot%202562-02-05%20at%206.52.54%20PM.png)
 
