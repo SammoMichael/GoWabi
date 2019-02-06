@@ -1,6 +1,6 @@
 # GoWabi
 # New York City Spa Locator
-## Single page app built with rails backend and react frontend using Google Maps API to scrape data on one thousand spa, barbershop, nail salon and hair removal
+## Single page app with user auth and built with rails backend and react frontend using Google Maps API to scrape data on one thousand spa, barbershop, nail salon and hair removal
 ## Optimized Using Rails Redis Caching and React-framework and diffing algorithm to throttle re-renders manageably
 ## local spas, barbershop, nail salon, and hair removal facilities
 ## Just the Barbershop Being Displayed using Font Awesome Icons 
